@@ -24,7 +24,7 @@ class Scrapper
   end
 
   def song_title(song_page)
-    song_page.css(TITLE_CLASS).text.strip
+    song_page.css(TITLE_CLASS).text
   end
 
   def song_text(song_page)
@@ -36,7 +36,7 @@ class Scrapper
   end
 
   def favourites_page
-    @page ||= client.get(favourites_page_url)
+    @favourites_page ||= client.get(favourites_page_url)
   end
 
   def client

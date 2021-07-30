@@ -16,7 +16,11 @@ module Exporters
     end
 
     def write_song(song, file)
-      file.write("#{song.title}#{TITLE_SEPARATOR}#{song.text}#{SONGS_SEPARATOR}")
+      file.write("#{song_title(song.title)}#{TITLE_SEPARATOR}#{song.text}#{SONGS_SEPARATOR}")
+    end
+
+    def song_title(title)
+      title.strip
     end
   end
 end
