@@ -1,7 +1,7 @@
 module Exporters
   class Base
-    def initialize(path)
-      @path = path
+    def initialize(file_path)
+      @file_path = file_path
     end
 
     def export(_songs)
@@ -10,6 +10,6 @@ module Exporters
 
     protected
 
-    attr_reader :path
+    attr_reader :file_path
   end
 end
