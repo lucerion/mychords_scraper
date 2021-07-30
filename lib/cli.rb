@@ -1,7 +1,9 @@
 require_relative './scrapper'
+require_relative './exporter'
 
 class Cli
   USAGE = 'USAGE: scrapper url'
+  DEFAULT_FILE_PATH = './songs'
 
   def initialize(url)
     @url = url
@@ -10,7 +12,7 @@ class Cli
   def run
     puts USAGE if url.nil? || url.empty?
 
-    scrapper.scrape
+    exporter.export(scrapper.scrape)
   end
 
   private
@@ -19,5 +21,9 @@ class Cli
 
   def scrapper
     @scrapper ||= Scrapper.new(url)
+  end
+
+  def exporter
+    @exporter ||= Exporter.new(DEFAULT_FILE_PATH)
   end
 end
