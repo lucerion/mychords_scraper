@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'mechanize', '~> 2.8.1'
+gem 'mechanize', '~> 2.8.3'
