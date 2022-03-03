@@ -1,0 +1,17 @@
+AllCops:
+  NewCops: enable
+
+Metrics/LineLength:
+  Max: 120
+
+Documentation:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/RegexpLiteral:
+  EnforcedStyle: slashes

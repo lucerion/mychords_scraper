@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './scrapper'
 require_relative './exporter'
 
