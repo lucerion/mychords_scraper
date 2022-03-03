@@ -10,4 +10,4 @@ Run `bundle install`
 
 ## Usage
 
-`./scrapper https://mychords.net/user/<user_id>/favorites`
+`./bin/scrapper https://mychords.net/user/<user_id>/favorites`
