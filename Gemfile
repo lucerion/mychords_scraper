@@ -6,5 +6,5 @@ gem 'mechanize', '~> 2.8.3'
 
 group :development do
   gem 'pry-byebug', '~> 3.9'
-  gem 'rubocop', '~> 1.25', require: false
+  gem 'rubocop', '~> 1.31', require: false
 end
