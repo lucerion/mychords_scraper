@@ -4,7 +4,7 @@ require_relative './scrapper'
 require_relative './exporter'
 
 class Cli
-  USAGE = 'USAGE: scrapper url'
+  USAGE = 'USAGE: scrapper URL'
   DEFAULT_FILE_PATH = './songs.txt'
 
   def initialize(favourites_page_url)

@@ -1,12 +1,10 @@
 # mychords scraper
 
-mychords.net/mychords.pro user favorites scraper
-
+[mychords.net](https://mychords.net) user favorites scraper
 
 ## Setup
 
 Run `bundle install`
-
 
 ## Usage
 
